@@ -33,7 +33,7 @@ If the user wants the information repeated, he just has to do a long tap on the 
 On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
 
-<p style="text-align:center"><a href="https://imgur.com/HydcqWc" ><img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="300"/></a></p>
+<p style="text-align:center"><img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="300"/></p>
 
 
 IMPLEMENTATION NOTES
@@ -44,7 +44,7 @@ For now, the app is only available in a version for the Android operating system
 
 When the app is turned on, it will retrieve bus route and MAC Address information from the internet, using the google sheets API. This info is being read from a specific Google sheets document. The document in the code example has only read permissions for the general public, so you might want to create your own document and update the API URL acordingly.
 
-<a href="https://imgur.com/rJTijJj"><img src="https://i.imgur.com/rJTijJj.png" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/rJTijJj.png" title="source: imgur.com" />
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/k4zeKPk"><a href="//imgur.com/k4zeKPk"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
