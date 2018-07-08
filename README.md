@@ -35,6 +35,7 @@ Turn on the app and immediately it will start trying to identify buses based on 
 All new relevant information will be advertised by audio.<br/>
 
 If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds).<br/>
+
 On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).<br/>
 
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
@@ -49,7 +50,6 @@ IMPLEMENTATION NOTES
 This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.
 
 For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
-
 When the app is turned on, it will retrieve bus route and MAC Address information from the internet, using the google sheets API. This info is being read from a specific Google sheets document. The document in the code example has only read permissions for the general public, so you might want to create your own document and update the API URL acordingly.
 
 <img src="https://i.imgur.com/rJTijJj.png" title="source: imgur.com" />
@@ -58,4 +58,3 @@ The bus route information is stored as cache file, so the user can download the 
 Alternatively, if the app can't read from the web service and has no cached info, it will use some hard coded values at the bus_allocation.js file. You might want to edit those too.
 
 The app will also advertise the presence of buses from specific bus companies, based on the network name (SSID). This configuration is not coming from the internet but hard coded at index.js.
-
