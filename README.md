@@ -2,6 +2,7 @@
 Mobile app for bus identification based on the onboard Wi-Fi hotspot MAC Address (proof of concept) 
 
 WHAT IS BUS SPOTTER?
+
 Identifying an approaching bus and knowing which route it's operating on, is one of the daily challenges of visually impaired people.
 Frequently, a blind person will have to stand up, making himself visible to the bus driver and make the bus stop, only to get informed that it's not the bus operating on the route that he needs.
 On rainy days, it will also mean that he will have to stand in a position away from shelter.
@@ -23,6 +24,7 @@ The results indicate that buses can be detected at a reasonable distance. Someti
 The limitations found are related to the Wi-Fi signal being blocked by buildings or other obstacles. This is an issue that also affects people trying to visually identify the vehicle, leaving blind people and regular users on a similar situation.
 
 HOW TO USE BUS SPOTTER?
+
 Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.
 All new relevant information will be advertised by audio.
 If the user wants the information repeated, it just has to do a long tap on the app window (more than 0.75 seconds)
@@ -33,6 +35,7 @@ If more than 1 bus is detected, they will be advertised by the decreasing order 
 
 
 IMPLEMENTATION NOTES
+
 This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.
 
 For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
