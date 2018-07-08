@@ -1,7 +1,7 @@
 # BusSpotter
 Mobile app for bus identification based on the onboard Wi-Fi hotspot MAC Address (proof of concept) 
 
-<br/>
+
 <br/>
 WHAT IS BUS SPOTTER?
 <br/>
@@ -27,7 +27,6 @@ The results indicate that buses can be detected at a reasonable distance. Someti
 The limitations found are related to the Wi-Fi signal being blocked by buildings or other obstacles. This is an issue that also affects people trying to visually identify the vehicle, leaving blind people and regular users on a similar situation.
 
 <br/>
-<br/>
 HOW TO USE BUS SPOTTER?
 <br/>
 
@@ -37,13 +36,12 @@ If the user wants the information repeated, he just has to do a long tap on the 
 On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
 
-<span style="text-align:center"><img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400"/></span>
+<img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400" style="display:block; margin-left: auto; margin-right: auto;"/>
 
-<br/>
 <br/>
 IMPLEMENTATION NOTES
 <br/>
-
+<br/>
 This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.
 
 For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
