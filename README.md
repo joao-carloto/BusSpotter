@@ -1,6 +1,7 @@
 # BusSpotter
 Mobile app for bus identification based on the onboard Wi-Fi hotspot MAC Address (proof of concept) 
 
+
 WHAT IS BUS SPOTTER?
 
 Identifying an approaching bus and knowing which route it's operating on, is one of the daily challenges of visually impaired people.
@@ -23,15 +24,16 @@ The current version of the app is just a proof of concept, but has been tested o
 The results indicate that buses can be detected at a reasonable distance. Sometimes at distance where it was not yet possible visually identify the number of the route. 
 The limitations found are related to the Wi-Fi signal being blocked by buildings or other obstacles. This is an issue that also affects people trying to visually identify the vehicle, leaving blind people and regular users on a similar situation.
 
+
 HOW TO USE BUS SPOTTER?
 
 Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.
 All new relevant information will be advertised by audio.
-If the user wants the information repeated, it just has to do a long tap on the app window (more than 0.75 seconds)
+If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds)
 On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="HydcqWc"><a href="//imgur.com/HydcqWc"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href="http:/imgur.com/HydcqWc"><img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" /></a>
 
 
 IMPLEMENTATION NOTES
@@ -42,7 +44,7 @@ For now, the app is only available in a version for the Android operating system
 
 When the app is turned on, it will retrieve bus route and MAC Address information from the internet, using the google sheets API. This info is being read from a specific Google sheets document. The document in the code example has only read permissions for the general public, so you might want to create your own document and update the API URL acordingly.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/RuxsS55"><a href="//imgur.com/RuxsS55"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href="http:/imgur.com/RuxsS55"><img src="http://i.imgur.com/RuxsS55.png" title="source: imgur.com" /></a>
 
 The bus route information is stored as cache file, so the user can download the info at home or work place and use the app on the street without network connectivity.
 Alternatively, if the app can't read from the web service and has no cached info, it will use some hard coded values at the bus_allocation.js file. You might want to edit those too.
