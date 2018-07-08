@@ -41,7 +41,7 @@ On new information, the cell phone will also vibrate, but this will only happen 
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
 <br/>
 <br/>
-<img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400" style="display:block; margin-left: auto; margin-right: auto;"/>
+<p align="center"> <img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400"/> </p>
 
 <br/>
 IMPLEMENTATION NOTES
