@@ -5,7 +5,7 @@ Mobile app for bus identification based on the onboard Wi-Fi hotspot MAC Address
 <br/>
 WHAT IS BUS SPOTTER?
 <br/>
-
+<br/>
 Identifying an approaching bus and knowing which route it's operating on, is one of the daily challenges of visually impaired people.
 Frequently, a blind person will have to stand up, making himself visible to the bus driver and make the bus stop, only to get informed that it's not the bus operating on the route that he needs.
 On rainy days, it will also mean that he will have to stand in a position away from shelter.
@@ -29,7 +29,7 @@ The limitations found are related to the Wi-Fi signal being blocked by buildings
 <br/>
 HOW TO USE BUS SPOTTER?
 <br/>
-
+<br/>
 Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.
 All new relevant information will be advertised by audio.
 If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds)
