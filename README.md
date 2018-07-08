@@ -19,7 +19,7 @@ The only piece of missing information is the specific bus route that the vehicle
 
 So why not just use the GPS tracking system that is already in place?<br/>
 On the GPS tracking system, the info is periodically transmitted from the BUS to the server. The server will then update some web service that will provide info to the mobile apps upon request. All of this implies some lag time, however short it might be, it might be relevant to someone that needs the confirmation of the actual physical presence of the vehicle.<br/>
-MAC address info relies upon direct information transmission from the vehicle to the user cell phone. Also, this does not imply that the user has internet connectivity on the street, since the relevant MAC Address and Bus route mapping might have been previously downloaded, before the user left his work place or home.
+MAC address info relies upon direct information transmission from the vehicle to the user cell phone. Also, this does not imply that the user has internet connectivity on the street, since the relevant MAC Address and Bus route mapping might have been previously downloaded, before the user left his work place or home.<br/>
 Ideally the 2 systems would work together on a single mobile app, relying on the same web service. This would bring both the benefits of anticipation and direct physical detection.
 
 The current version of the app is just a proof of concept, but has been tested on the city of Porto (Portugal). It was configured to detect the SSID of the main public transport provider (STCP). 
