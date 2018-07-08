@@ -17,7 +17,7 @@ A Wi-Fi network will publicize 2 pieces of information that can be translated in
 
 The only piece of missing information is the specific bus route that the vehicle is operating on the current day and hour. We imagine that such information might be available, since some BUS companies already have a real-time GPS bus location system. Such systems feed existing mobile apps that will tell the user the wait time for a specific bus on a given bus stop. The necessary changes, on the server side, would be to add the information that correlates a specific MAC address/vehicle to the bus route that it's currently serving.
 
-So why not just use the GPS tracking system that is already in place?
+So why not just use the GPS tracking system that is already in place?<br/>
 On the GPS tracking system, the info is periodically transmitted from the BUS to the server. The server will then update some web service that will provide info to the mobile apps upon request. All of this implies some lag time, however short it might be, it might be relevant to someone that needs the confirmation of the actual physical presence of the vehicle.
 MAC address info relies upon direct information transmission from the vehicle to the user cell phone. Also, this does not imply that the user has internet connectivity on the street, since the relevant MAC Address and Bus route mapping might have been previously downloaded, before the user left his work place or home.
 Ideally the 2 systems would work together on a single mobile app, relying on the same web service. This would bring both the benefits of anticipation and direct physical detection.
