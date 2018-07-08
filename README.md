@@ -32,7 +32,7 @@ HOW TO USE BUS SPOTTER?
 <br/>
 Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.<br/>
 
-All new relevant information will be advertised by audio.<br/>
+All new relevant information will be advertised by audio.<br/><br/>
 
 If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds).<br/>
 
@@ -47,7 +47,7 @@ If more than 1 bus is detected, they will be advertised by the decreasing order 
 IMPLEMENTATION NOTES
 <br/>
 <br/>
-This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.<br/>
+This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.<br/><br/>
 
 For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
 
