@@ -30,9 +30,9 @@ The limitations found are related to the Wi-Fi signal being blocked by buildings
 HOW TO USE BUS SPOTTER?
 <br/>
 <br/>
-Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.<br/>
+Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.<br/><br/>
 
-All new relevant information will be advertised by audio.<br/><br/>
+All new relevant information will be advertised by audio.<br/>
 
 If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds).<br/>
 
