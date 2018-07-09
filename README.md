@@ -11,7 +11,7 @@ Frequently, a blind person will have to stand up, making himself visible to the 
 On rainy days, it will also mean that he will have to stand in a position away from shelter.
 
 The dissemination of Wi-Fi hotspots, inside public transportation, offers an opportunity for the identification of an approaching vehicle, without having visual information and using an infrastructure that is already in place.
-A Wi-Fi network will publicize 2 pieces of information that can be translated in a useful manner, without the need of actually connection to the network.
+A Wi-Fi network will publicize 2 pieces of information that can be translated in a useful manner, without the need of actually connecting to the network.
 - Name of the network (SSID): translates to the bus company to which the vehicle belongs to.
 - MAC address of the Wi-Fi device (BSSID): translates to a specific vehicle.
 
