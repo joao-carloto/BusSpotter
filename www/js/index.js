@@ -86,32 +86,22 @@ function identifyBuses(scanResult, busAllocation) {
 
     scanResult.forEach(function (network) {
         busAllocation.forEach(function (bus) {
-            var busBSSID = bus[1];
-            var routeNum = bus[2];
-            var routeName = bus[3];
-            var validFromStr = bus[4];
-            var validToStr = bus[5];
-
-            var busIdentified = false;
-
             // We identify the approaching veicle using the WiFi access point MAC address 
             // We confirm if it is bus operating on specific line within a given time frame
-            if (network.BSSID === busBSSID && nowIsInsideTimeFrame(validFromStr, validToStr)) {
-                nearBuses.push(routeNum + " " + routeName);
-                busIdentified = true;
-                break;
+            if (network.BSSID === bus[1] && nowIsInsideTimeFrame(bus[4], bus[5])) {
+                nearBuses.push(bus[2] + " " + bus[3]);
+            }
+            // We cannot identify the BUS but we check if it's from a known bus operator
+            // and advertise it if it's the case
+            // This should be the first valiation on real scenario so to make the code more efficient
+            // It's only in this way so we can use any sort of acccess point for testing purposes
+            else if (JSON.stringify(network.SSID).indexOf("STCP | PortoDigital") >= 0) {
+                nearBuses.push("dos S T C P");
+            }
+            else if (JSON.stringify(network.SSID).indexOf("Coimbra +") >= 0) {
+                nearBuses.push("dos S M T U C");
             }
         });
-        // We cannot identify the bus but we check if it's from a known bus operator
-        // and advertise it if it's the case
-        // This should be the first valiation on real scenario so to make the code more efficient
-        // It's only in this way so we can use any sort of acccess point for testing purposes
-        if (!busIdentified && JSON.stringify(network.SSID).indexOf("STCP | PortoDigital") >= 0) {
-            nearBuses.push("dos S T C P");
-        }
-        else if (!busIdentified && JSON.stringify(network.SSID).indexOf("Coimbra +") >= 0) {
-            nearBuses.push("dos S M T U C");
-        }
     });
 
     // Build the text that will advertise the relevant information
