@@ -11,7 +11,7 @@ Frequently, a blind person will have to stand up, making himself visible to the 
 On rainy days, it will also mean that he will have to stand in a position away from shelter.
 
 The dissemination of Wi-Fi hotspots, inside public transportation, offers an opportunity for the identification of an approaching vehicle, without having visual information and using an infrastructure that is already in place.
-A Wi-Fi network will publicize 2 pieces of information that can be translated in a useful manner, without the need of actually connection to the network.
+A Wi-Fi network will publicize 2 pieces of information that can be translated in a useful manner, without the need of actually connecting to the network.
 - Name of the network (SSID): translates to the bus company to which the vehicle belongs to.
 - MAC address of the Wi-Fi device (BSSID): translates to a specific vehicle.
 
@@ -30,22 +30,26 @@ The limitations found are related to the Wi-Fi signal being blocked by buildings
 HOW TO USE BUS SPOTTER?
 <br/>
 <br/>
-Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.
-All new relevant information will be advertised by audio.
-If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds)
-On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).
+Turn on the app and immediately it will start trying to identify buses based on the surrounding Wi-Fi networks.<br/><br/>
+
+All new relevant information will be advertised by audio.<br/>
+
+If the user wants the information repeated, he just has to do a long tap on the app window (more than 0.75 seconds).<br/>
+
+On new information, the cell phone will also vibrate, but this will only happen if the user has already tapped once on the app window (limitation enforced by the Android system).<br/>
+
 If more than 1 bus is detected, they will be advertised by the decreasing order of the Wi-Fi signal strength. This assumes that the nearest bus is the one with the strongest signal, which might not be always true, since other factors might be relevant.
 <br/>
 <br/>
-<img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400" style="display:block; margin-left: auto; margin-right: auto;"/>
+<p align="center"> <img src="http://i.imgur.com/HydcqWc.png" title="source: imgur.com" width="400"/> </p>
 
 <br/>
 IMPLEMENTATION NOTES
 <br/>
 <br/>
-This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and html. The most relevant code is at www\js\index.js, you an check the comments to get an idea on how this works.
+This proof of concept is implemented using the <a href="https://cordova.apache.org/">Cordova</a> framework. This means the code you'll find here is just a few lines of JavaScript and HTML. The most relevant code is at www\js\index.js. You can check the code comments to get an idea on how this works.<br/><br/>
 
-For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
+For now, the app is only available in a version for the Android operating system. iOS (iPhone) has limitations on the API that gives access to the WiFi information, those limitations would imply some additional coding in Objective-C. For more information on this you may check the link <a href="https://developer.apple.com/library/archive/qa/qa1942/_index.html">here</a>.
 
 When the app is turned on, it will retrieve bus route and MAC Address information from the internet, using the google sheets API. This info is being read from a specific Google sheets document. The document in the code example has only read permissions for the general public, so you might want to create your own document and update the API URL acordingly.
 
@@ -55,4 +59,3 @@ The bus route information is stored as cache file, so the user can download the 
 Alternatively, if the app can't read from the web service and has no cached info, it will use some hard coded values at the bus_allocation.js file. You might want to edit those too.
 
 The app will also advertise the presence of buses from specific bus companies, based on the network name (SSID). This configuration is not coming from the internet but hard coded at index.js.
-
